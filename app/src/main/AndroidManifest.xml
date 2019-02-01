@@ -15,8 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".score1_Activity"></activity>
-        <activity android:name=".question_Activity" />
+        <activity android:name=".score1_Activity"/>
+        <activity android:name=".quizz_Activity" />
         <activity android:name=".game1_Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>

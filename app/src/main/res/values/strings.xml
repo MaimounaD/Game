@@ -1,13 +1,25 @@
 <resources>
-    <string name="app_name">Game</string>
+    <string name="app_name">GeoQuizz</string>
     <string name="welcome">Welcome</string>
     <string name="game1">Quizz Game</string>
     <string name="game2">Map Game</string>
     <string name="quit">Quit</string>
+    <string name="quizzGame">Quizz game</string>
+    <string name="mapGame">Map game</string>
     <string name="startGame">Start</string>
     <string name="scoreGame">High score</string>
+    <string name="playerLabel">Player</string>
+    <string name="player">Name</string>
+    <string name="savePlayer">Save</string>
+    <string name="scoreLabel">Score :</string>
+    <string name="currentScore">Question</string>
+    <string name="questionLabel">Question :</string>
     <string name="question">Question</string>
+    <string name="answerLabel">Answer : </string>
     <string name="answer">answer here!</string>
-    <string name="valid">Valid</string>
+    <string name="validAnswer">Valid</string>
+    <string name="highScorePlayer">High score player</string>
+    <string name="highScoreValue">High score value</string>
+    <string name="highScoreDate">High score date</string>
     <string name="addMarker">Add marker</string>
 </resources>

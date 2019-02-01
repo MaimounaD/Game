@@ -1,40 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#fce4ec"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="#008577"
+        android:layout_marginBottom="100sp"
         android:text="@string/welcome"
-        android:textColor="#000000"
-        android:textSize="50dp"
         />
     <Button
         android:id="@+id/game1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="20sp"
+        android:padding="20sp"
         android:text="@string/game1"
-        android:onClick="game1"/>
-
-
+        android:onClick="game1" />
     <Button
         android:id="@+id/game2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="20sp"
+        android:padding="20sp"
         android:text="@string/game2"
-        android:onClick="game2"/>
-
+        android:onClick="game2" />
     <Button
         android:id="@+id/quit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="20sp"
         android:text="@string/quit"
-        android:onClick="quit"/>/>
-
+        android:onClick="quit" />
 </LinearLayout>

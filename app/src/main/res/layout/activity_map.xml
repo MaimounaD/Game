@@ -4,14 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
     <Button
         android:id="@+id/addMarker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/addMarker"
-        android:onClick="addMarker"/>
-
+        android:onClick="addMarker" />
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"

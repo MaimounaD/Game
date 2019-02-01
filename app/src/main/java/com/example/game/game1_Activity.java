@@ -14,7 +14,7 @@ public class game1_Activity extends AppCompatActivity {
     }
     // affiche le jeu
     public void startGame(View v){
-        Intent intent = new Intent(this, question_Activity.class);
+        Intent intent = new Intent(this, quizz_Activity.class);
         startActivity(intent);
     }
     // affiche le meilleur score
