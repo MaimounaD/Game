@@ -6,38 +6,54 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".MainActivity">
+
     <TextView
+        style = "@style/activityTitle"
+        android:id="@+id/playerLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
-        android:textColor="#008577"
-        android:layout_marginBottom="100sp"
-        android:text="@string/welcome"
-        />
+        android:text="@string/playerLabel" />
+    <EditText
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20sp"
+        android:inputType="textCapWords"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:hint="@string/player" />
+    <Button
+        android:id="@+id/savePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="savePlayer"
+        android:padding="20sp"
+        android:layout_marginBottom="30sp"
+        android:text="@string/savePlayer" />
     <Button
         android:id="@+id/game1"
+        style = "@style/buttonMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_marginBottom="20sp"
-        android:padding="20sp"
+        android:enabled="false"
         android:text="@string/game1"
         android:onClick="game1" />
     <Button
         android:id="@+id/game2"
+        style = "@style/buttonMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_marginBottom="20sp"
-        android:padding="20sp"
+        android:enabled="false"
         android:text="@string/game2"
         android:onClick="game2" />
     <Button
         android:id="@+id/quit"
+        style = "@style/buttonMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:padding="20sp"
         android:text="@string/quit"
         android:onClick="quit" />
 </LinearLayout>

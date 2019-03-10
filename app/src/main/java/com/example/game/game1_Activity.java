@@ -14,7 +14,9 @@ public class game1_Activity extends AppCompatActivity {
     }
     // affiche le jeu
     public void startGame(View v){
+        String playerName = getIntent().getExtras().getString("PLAYER_NAME");
         Intent intent = new Intent(this, quizz_Activity.class);
+        intent.putExtra("PLAYER_NAME", playerName); // permet de récupérer le nom du joueur*/
         startActivity(intent);
     }
     // affiche le meilleur score
@@ -22,7 +24,7 @@ public class game1_Activity extends AppCompatActivity {
         Intent intent = new Intent(this, score1_Activity.class);
         startActivity(intent);
     }
-    // retourne à l'accueil
+    // retourne sur la vue précédente
     public void quit(View view) {
         onBackPressed();
     }

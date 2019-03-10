@@ -5,21 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".score1_Activity">
     <TextView
-        android:text="@string/scoreGame"
+        style = "@style/activityTitle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom = "100sp"
+        android:text="@string/scoreGame" />
     <TextView
         android:id="@+id/highscorePlayer"
+        style = "@style/highscore"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/highScorePlayer" />
     <TextView
         android:id="@+id/highScoreValue"
+        style = "@style/highscore"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/highScoreValue" />
     <TextView
         android:id="@+id/highScoreDate"
+        style = "@style/highscore"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/highScoreDate" />
 </LinearLayout>

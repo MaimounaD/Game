@@ -7,5 +7,40 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <!-- Pour les titres de pages -->
+    <style name="activityTitle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <!-- Pour les boutons des menus -->
+    <style name="buttonMenu" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">30sp</item>
+        <item name="android:padding">20sp</item>
+        <item name="android:layout_marginBottom">20sp</item>
+    </style>
+    <!-- Pour les boutons des jeux -->
+    <style name="buttonGame" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:padding">20sp</item>
+    </style>
+    <!-- Pour les labels score et question -->
+    <style name="labelGame" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <!-- Pour la question -->
+    <style name="labelQuestion" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <!-- Pour le meilleur score -->
+    <style name="highscore" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginBottom">10sp</item>
+    </style>
+    <!-- Pour les types de quizz -->
+    <style name="quizzType" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">30sp</item>
+    </style>
 
 </resources>

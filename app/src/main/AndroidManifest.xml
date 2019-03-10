@@ -7,6 +7,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,10 +16,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".score1_Activity"/>
-        <activity android:name=".quizz_Activity" />
-        <activity android:name=".game1_Activity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".pictures_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".questions_Activity" android:screenOrientation="portrait" />
+        <activity android:name=".score1_Activity" android:screenOrientation="portrait" />
+        <activity android:name=".quizz_Activity" android:screenOrientation="portrait" />
+        <activity android:name=".game1_Activity" android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity" android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,10 +41,11 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".map_Activity"
-            android:label="@string/title_activity_maps" />
-        <activity android:name=".game2_Activity" />
-        <activity android:name=".score2_Activity" />
+            android:name=".MapActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name=".game2_Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".score2_Activity" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

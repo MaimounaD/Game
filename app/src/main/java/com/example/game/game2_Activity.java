@@ -17,7 +17,9 @@ public class game2_Activity extends AppCompatActivity {
     }
     // affiche le jeu
     public void startGame(View v){
-        Intent intent = new Intent(this, map_Activity.class);
+        String playerName = getIntent().getExtras().getString("PLAYER_NAME");
+        Intent intent = new Intent(this, MapActivity.class);
+        intent.putExtra("PLAYER_NAME", playerName); // permet de récupérer le nom du joueur
         startActivity(intent);
     }
     // affiche le meilleur score

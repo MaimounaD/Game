@@ -4,59 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".quizz_Activity">
+
     <TextView
-        android:id="@+id/playerLabel"
+        style = "@style/activityTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="#008577"
-        android:layout_gravity="center"
-        android:text="@string/playerLabel" />
-    <EditText
-        android:id="@+id/player"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20sp"
-        android:hint="@string/player" />
+        android:layout_marginBottom="100sp"
+        android:text="@string/chooseQuizz" />
+
     <Button
-        android:id="@+id/savePlayer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="20sp"
-        android:padding="20sp"
-        android:text="@string/savePlayer"
-        android:onClick="savePlayer"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/scoreLabel"
-        />
-    <TextView
-        android:id="@+id/currentScore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/questionLabel" />
-    <TextView
-        android:id="@+id/question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/answerLabel" />
-    <EditText
-        android:id="@+id/answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/questionsLink"
+        style = "@style/quizzType"
+        android:layout_width="200sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="50sp"
+        android:onClick="goQuestions"
+        android:text="@string/questionsLink" />
+
     <Button
-        android:id="@+id/valid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/validAnswer" />
+        android:id="@+id/picturesLink"
+        style = "@style/quizzType"
+        android:layout_width="200sp"
+        android:layout_height="100sp"
+        android:text="@string/picturesLink"
+        android:onClick="goPictures" />
+
 </LinearLayout>
