@@ -21,5 +21,5 @@
     string in this file.
     -->
     <string name="title_activity_maps"></string>
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBw54CqY5EHhApgfQ_ziXeOJ-bvnLh0_Vw</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">key-here</string>
 </resources>
